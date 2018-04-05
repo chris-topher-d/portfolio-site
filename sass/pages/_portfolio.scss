@@ -1,0 +1,111 @@
+#portfolio {
+  background: #395799;
+  // background: #116c92;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  .title {
+    color: #fff;
+    letter-spacing: 1px;
+    padding-bottom: 20px;
+  }
+
+  .skills-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px 0;
+
+    i {
+      color: #fff;
+      font-size: 60px;
+      padding: 10px 20px;
+      filter: $drop-shadow;
+    }
+  }
+
+  #git-info {
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      color: #fff;
+      margin: 30px 0;
+
+      img {
+        margin-right: 15px;
+      }
+
+      #git-link {
+        padding: 0;
+      }
+
+      &:hover #git-link {
+        color: #ff704e;
+      }
+    }
+  }
+
+  .projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    .block {
+      max-width: 500px;
+      margin: 45px;
+      position: relative;
+
+      a {
+        img {
+          min-width: 500px;
+          cursor: pointer;
+          transition: .3s;
+        }
+
+        .info {
+          width: 500px;
+          height: 0px;
+          position: absolute;
+          bottom: 60px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          overflow: hidden;
+          transition: 0.7s ease;
+
+          h3 {
+            color: #fff;
+            font-size: 30px;
+            padding: 0px 20px 0 20px;
+          }
+
+          h4 {
+            color: #fff;
+            padding: 15px 100px 0 100px;
+          }
+        }
+      }
+
+      p {
+        color: #fff;
+      }
+
+      &:hover img{
+        opacity: .35;
+      }
+
+      &:hover .info {
+        height: 275px;
+        transition: all 0.7s ease;
+      }
+    }
+  }
+}

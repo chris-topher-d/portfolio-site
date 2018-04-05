@@ -59,7 +59,7 @@
   <meta name='viewport' content='width=800'>
   <title>Christopher Dennis</title>
   <link rel="shortcut icon" href="./favicon_c.png">
-  <link rel='stylesheet' href='css/style.css'>
+  <link rel='stylesheet' href='css/main.css'>
   <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
   <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
   <script
@@ -101,7 +101,7 @@
   </section>
 
     <section id='portfolio'>
-      <h3>Portfolio</h3>
+      <!-- <h3 class='title'>Portfolio</h3> -->
       <div class='skills-list'>
         <i class="devicon-html5-plain-wordmark"></i>
         <i class="devicon-css3-plain-wordmark"></i>
@@ -120,6 +120,16 @@
       </div>
 
       <div class='projects'>
+        <div class='block'>
+          <a href='http://christopherdennis.me/songify/' target='_blank'>
+            <img src='img/songify.png' alt='songify'>
+            <div class='info'>
+              <h3>Songify Music Streaming</h3>
+              <h4>Create an account and stream your favorite music for free</h4>
+            </div>
+          </a>
+          <p>HTML5 | CSS3 | SASS | JavaScript | jQuery | MySQL | PHP</p>
+        </div>
         <div class='block'>
           <a href='http://christopherdennis.me/weather-app/' target='_blank'>
             <img src='img/weather-app.png' alt='weather-app'>
@@ -175,17 +185,14 @@
     </section>
 
     <section id='about'>
-      <h3>About</h3>
+      <h3 class='title'>About</h3>
       <div id='about-info'>
         <p>I'm a native Austinite who enjoys learning new things and spending time outdoors. I first started learning C in 2013 as a hobby and eventually made my way to front end development with the goal of becoming a full stack developer.</p>
       </div>
     </section>
 
     <section id='contact'>
-      <h3>Contact</h3>
-      <?php if ($msg != ''): ?>
-        <div class="alert <?php echo $msgClass; ?>"><?php echo $msg; ?></div>
-      <?php endif; ?>
+      <h3 class='title'>Contact</h3>
       <div class='contact-form'>
         <form method='post' action="#contact" action="<?php echo $_SERVER['PHP_SELF']; ?>">
           <label>Name:</label>
@@ -196,6 +203,9 @@
           <textarea id="message" name="message" placeholder=""><?php echo isset($_POST['message']) ? $message : ''; ?></textarea>
           <button id='submit-btn' type="submit" name='submit'>SEND</button>
         </form>
+        <?php if ($msg != ''): ?>
+          <div class="alert <?php echo $msgClass; ?>"><?php echo $msg; ?></div>
+        <?php endif; ?>
       </div>
     </section>
 
