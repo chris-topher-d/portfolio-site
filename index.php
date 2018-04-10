@@ -152,14 +152,14 @@
         </div>
         <div class='block'>
           <a href='http://christopherdennis.me/quote-generator/' target='_blank'>
-            <img src='img/quote.png' alt='qoute-generator'>
+            <img src='img/react-quote.png' alt='qoute-generator'>
             <div class='info'>
-              <h3>Random Quote</h3>
+              <h3>React Quote</h3>
               <h3>Generator</h3>
               <h4>Generate a random quote and send it to your Twitter account</h4>
             </div>
           </a>
-          <p>HTML5 | CSS3 | JavaScript | jQuery | API</p>
+          <p>HTML5 | CSS3 | Flexbox | SASS | React | API</p>
         </div>
         <div class='block'>
           <a href='http://christopherdennis.me/tic-tac-toe/' target='_blank'>
