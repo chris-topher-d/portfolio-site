@@ -151,7 +151,7 @@
           <p>HTML5 | CSS3 | Flexbox | SASS | React | API</p>
         </div>
         <div class='block'>
-          <a href='http://christopherdennis.me/quote-generator/' target='_blank'>
+          <a href='http://christopherdennis.me/react-quote/' target='_blank'>
             <img src='img/react-quote.png' alt='qoute-generator'>
             <div class='info'>
               <h3>React Quote</h3>
