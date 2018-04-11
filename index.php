@@ -159,7 +159,7 @@
               <h4>Generate a random quote and send it to your Twitter account</h4>
             </div>
           </a>
-          <p>HTML5 | CSS3 | Flexbox | SASS | React | API</p>
+          <p>HTML5 | CSS3 | Flexbox | React | API</p>
         </div>
         <div class='block'>
           <a href='http://christopherdennis.me/tic-tac-toe/' target='_blank'>
