@@ -2,7 +2,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  // background: linear-gradient(to bottom right, #1a3269, #1a6930) 100% no-repeat;
   background: linear-gradient(to bottom right, #487154, #19407e) 100% no-repeat;
   height: 100vh;
   min-height: 700px;
@@ -49,7 +48,6 @@
         color: #fff;
         font-size: 2rem;
         opacity: .7;
-        // transition: .1s ease-in-out;
         animation: 2s pulse .5s infinite ease-in-out;
 
         &:hover {
