@@ -124,7 +124,7 @@
           <a href='http://christopherdennis.me/songify/' target='_blank'>
             <img src='img/songify.png' alt='songify'>
             <div class='info'>
-              <h3>Songify Music Service</h3>
+              <h3>Music Streaming Service</h3>
               <h4>Create an account and stream your favorite music for free</h4>
             </div>
           </a>
