@@ -1,10 +1,12 @@
 <?php
+
   // Message vars
   $msg = '';
   $msgClass = '';
 
   // Check for submit
   if (filter_has_var(INPUT_POST, 'submit')) {
+
     // Get form data
     $name = htmlspecialchars($_POST['name']);
     $email = htmlspecialchars($_POST['email']);
@@ -12,43 +14,55 @@
 
     // Check required fields
     if (!empty($email) && !empty($name) && !empty($message)) {
-      // Passed
-      // Check Email
+
+      // PASSED - Check Email
       if (filter_var($email, FILTER_VALIDATE_EMAIL) === false) {
-        // Failed
+
+        // FAILED - Invalid email used
         $msg = 'Please use a valid email';
         $msgClass = 'alert-danger';
+
       } else {
-        // Passed
-        // Recipient Email
+
+        // PASSED - Valid email used - Recipient Email
         $toEmail = 'cdennis.aus@gmail.com';
         $subject = 'Contact request from '.$name;
         $body = '<h2>Contact Request</h2>
                 <h4>Name</h4><p>'.$name.'</p>
                 <h4>Email</h4><p>'.$email.'</p>
                 <h4>Message</h4><p>'.$message.'</p>';
+
         // Email Headers
         $headers = "MIME-Version: 1.0" . "\r\n";
         $headers .= "Content-Type:text/html;charset=UTF-8" . "\r\n";
+
         // Additional Headers
         $headers .= "From: " .$name. "<".$email.">"."\r\n";
 
         if (mail($toEmail, $subject, $body, $headers)) {
-          // Email Sent
+
+          // PASSED - Email Sent
           $msg = 'Your message has been sent';
           $msgClass = 'alert-danger';
+
         } else {
-          // Failed
+
+          // FAILED
           $msg = 'Your email was not sent';
           $msgClass = 'alert-danger';
+
         }
       }
+
     } else {
-      // Failed
+
+      // FAILED - All fields not inlcuded
       $msg = 'Please fill in all fields';
       $msgClass = 'alert-danger';
+
     }
   }
+
 ?>
 
 <!DOCTYPE html>
